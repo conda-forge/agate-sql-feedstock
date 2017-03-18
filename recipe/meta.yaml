@@ -1,8 +1,8 @@
 {%set name = "agate-sql" %}
-{%set version = "0.5.0" %}
+{%set version = "0.5.1" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "e5fa728dd5c0d71d3c7653a794cd830330fa2cf8b2f02230db68ddea3ab32ffb" %}
+{%set hash_val = "1ce9c15218f7318b3db49a8d744172da3318d1f719f8cd0135f692f405c3ed75" %}
 {%set build_num = "0" %}
 
 package:
