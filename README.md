@@ -14,9 +14,9 @@ Summary: agate-sql adds SQL read/write support to agate.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/agate-sql-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/agate-sql-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/agate-sql-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/agate-sql-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/agate-sql-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/agate-sql-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmppxs8jjk8-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmppxs8jjk8-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmppxs8jjk8-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmppxs8jjk8-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmppxs8jjk8-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmppxs8jjk8-feedstock/branch/master)
 
 Current release info
 ====================
