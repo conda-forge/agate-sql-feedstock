@@ -1,9 +1,8 @@
-{%set name = "agate-sql" %}
-{%set version = "0.5.2" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash = "2458cec76c9b4effccc604d286d6284d315d2cd9dd1e9943067a596728e68e62" %}
-{%set build = 0 %}
+{% set name = "agate-sql" %}
+{% set version = "0.5.3" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "877b7b85adb5f0325455bba8d50a1623fa32af33680b554feca7c756a15ad9b4" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +14,8 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  noarch: python
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -36,7 +36,7 @@ about:
   home: http://agate-sql.readthedocs.org/
   license: MIT
   license_family: MIT
-  # license_file: COPYING - not included in manifest - see https://github.com/wireservice/agate-sql/pull/24
+  license_file: COPYING
   summary: 'agate-sql adds SQL read/write support to agate.'
   doc_url: http://agate-sql.readthedocs.org/
   dev_url: https://github.com/wireservice/agate-sql
