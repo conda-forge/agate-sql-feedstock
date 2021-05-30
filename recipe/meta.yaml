@@ -1,22 +1,18 @@
 {% set name = "agate-sql" %}
-{% set version = "0.5.4" %}
-{% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "9277490ba8b8e7c747a9ae3671f52fe486784b48d4a14e78ca197fb0e36f281b" %}
+{% set version = "0.5.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 056dc9e587fbdfdf3f1c9950f4793a5ee87622c19deba31aa0a6d6681816dcde
 
 build:
   noarch: python
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -31,6 +27,10 @@ requirements:
 test:
   imports:
     - agatesql
+  commands:
+    - pip check
+  requires: 
+    - pip
 
 about:
   home: http://agate-sql.readthedocs.org/
