@@ -15,16 +15,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - agate >=1.5.0
     - sqlalchemy >=1.0.8
 
@@ -44,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
