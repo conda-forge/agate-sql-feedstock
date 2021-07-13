@@ -1,5 +1,5 @@
 {% set name = "agate-sql" %}
-{% set version = "0.5.6" %}
+{% set version = "0.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 056dc9e587fbdfdf3f1c9950f4793a5ee87622c19deba31aa0a6d6681816dcde
+  sha256: 7622c1f243b5a9a5efddfe28c36eeeb30081e43e3eb72e8f3da22c2edaecf4d8
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ test:
     - agatesql
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: COPYING
-  summary: 'agate-sql adds SQL read/write support to agate.'
+  summary: agate-sql adds SQL read/write support to agate.
   doc_url: http://agate-sql.readthedocs.org/
   dev_url: https://github.com/wireservice/agate-sql
 
