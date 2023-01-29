@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - agate >=1.5.0
-    - sqlalchemy >=1.0.8
+    - sqlalchemy >=1.0.8,<2
 
 test:
   imports:
