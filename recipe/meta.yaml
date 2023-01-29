@@ -1,5 +1,5 @@
 {% set name = "agate-sql" %}
-{% set version = "0.5.8" %}
+{% set version = "0.5.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 581e062ae878cc087d3d0948670d46b16589df0790bf814524b0587a359f2ada
+  sha256: 30b642a32a5b671161abef9e8ec36352f2e78a24ce849054edac6946d8b9ddc6
 
 build:
   noarch: python
