@@ -1,11 +1,11 @@
-About agate-sql
-===============
+About agate-sql-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/agate-sql-feedstock/blob/main/LICENSE.txt)
 
 Home: http://agate-sql.readthedocs.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/agate-sql-feedstock/blob/main/LICENSE.txt)
 
 Summary: agate-sql adds SQL read/write support to agate.
 
