@@ -1,0 +1,48 @@
+schema_version: 1
+
+context:
+  name: agate-sql
+  version: "0.7.3"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 4c588a28e80bc625c7d5f915e8f8dff4900140a8a6d8a350a098a2ba9adf9d33
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - agate >=1.5.0
+    - sqlalchemy >=1.0.8,<2
+
+tests:
+  - python:
+      imports:
+        - agatesql
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  license: MIT
+  license_file: COPYING
+  summary: agate-sql adds SQL read/write support to agate.
+  homepage: http://agate-sql.readthedocs.org/
+  repository: https://github.com/wireservice/agate-sql
+  documentation: http://agate-sql.readthedocs.org/
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - jan-janssen
